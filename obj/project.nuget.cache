@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "eMkpqAGB6osSHJ721lKzw3Oa9fZO8b8NDQ+Mlkdknx1CPyb3Oa5n/h1IPxYMRuOuzJwpDF7m1avM2rn/P7HTZw==",
+  "dgSpecHash": "VU+JIB1JCqyg30xwOqlt3Euvv11SAqRYDE/6Jj2ev3jdEZ6X4Wbft4i2hfaU/0wCMJfK30YuZMUc59G0+m0WjA==",
   "success": true,
-  "projectFilePath": "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj",
+  "projectFilePath": "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\PRJ- Entity Framework C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adria\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
     "C:\\Users\\adria\\.nuget\\packages\\azure.identity\\1.10.3\\azure.identity.1.10.3.nupkg.sha512",

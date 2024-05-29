@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj": {}
+    "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\PRJ- Entity Framework C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj": {}
   },
   "projects": {
-    "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj": {
+    "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\PRJ- Entity Framework C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj",
+        "projectUniqueName": "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\PRJ- Entity Framework C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj",
         "projectName": "Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp",
-        "projectPath": "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj",
+        "projectPath": "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\PRJ- Entity Framework C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.csproj",
         "packagesPath": "C:\\Users\\adria\\.nuget\\packages\\",
-        "outputPath": "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp\\obj\\",
+        "outputPath": "D:\\Projetos e BootCamps\\Bootcamp Coding The Future Avanade - .NET Developer\\Prj-Entity Framework com C#\\PRJ- Entity Framework C#\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

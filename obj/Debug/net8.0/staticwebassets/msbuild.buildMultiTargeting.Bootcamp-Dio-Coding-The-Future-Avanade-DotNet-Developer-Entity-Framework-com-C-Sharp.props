@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.props" />
+</Project>

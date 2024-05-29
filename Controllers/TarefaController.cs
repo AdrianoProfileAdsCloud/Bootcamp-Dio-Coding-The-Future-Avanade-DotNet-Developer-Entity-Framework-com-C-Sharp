@@ -1,16 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
-using TrilhaApiDesafio.Context;
-using TrilhaApiDesafio.Models;
+using ProjetoAPI.Context;
+using ProjetoAPI.Models;
 
-namespace TrilhaApiDesafio.Controllers
+namespace ProjetoAPI.Controllers
 {
     [ApiController]
     [Route("[controller]")]
     public class TarefaController : ControllerBase
     {
-        private readonly OrganizadorContext _context;
+        private readonly AppDbContext _context;
 
-        public TarefaController(OrganizadorContext context)
+        public TarefaController(AppDbContext context)
         {
             _context = context;
         }

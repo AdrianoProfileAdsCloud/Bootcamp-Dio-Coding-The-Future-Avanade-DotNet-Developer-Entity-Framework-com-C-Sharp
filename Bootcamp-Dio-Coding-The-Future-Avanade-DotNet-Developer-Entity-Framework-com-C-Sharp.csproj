@@ -4,7 +4,7 @@
     <TargetFramework>net8.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>Bootcamp_Dio_Coding_The_Future_Avanade_DotNet_Developer_Entity_Framework_com_C_Sharp</RootNamespace>
+    <RootNamespace>ProjetoAPI</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>

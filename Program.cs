@@ -1,7 +1,12 @@
+using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore;
+using ProjetoAPI.Context;
+
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<OrganizadorContext>(options =>
+builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("ConexaoPadrao")));
 
 builder.Services.AddControllers();

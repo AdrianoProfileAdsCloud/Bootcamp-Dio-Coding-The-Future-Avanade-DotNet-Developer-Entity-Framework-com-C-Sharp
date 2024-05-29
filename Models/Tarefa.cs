@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TrilhaApiDesafio.Models
+namespace ProjetoAPI.Models
 {
     public class Tarefa
     {
@@ -12,5 +12,7 @@ namespace TrilhaApiDesafio.Models
         public string Descricao { get; set; }
         public DateTime Data { get; set; }
         public EnumStatusTarefa Status { get; set; }
+        public int ColaboradorId { get; set; }
+        public Colaborador Colaborador { get; set; }
     }
 }

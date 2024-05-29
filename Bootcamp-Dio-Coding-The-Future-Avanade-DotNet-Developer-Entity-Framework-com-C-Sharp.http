@@ -1,6 +1,6 @@
-@Bootcamp_Dio_Coding_The_Future_Avanade_DotNet_Developer_Entity_Framework_com_C_Sharp_HostAddress = http://localhost:5166
+@ProjetoAPI_HostAddress = http://localhost:5166
 
-GET {{Bootcamp_Dio_Coding_The_Future_Avanade_DotNet_Developer_Entity_Framework_com_C_Sharp_HostAddress}}/weatherforecast/
+GET {{ProjetoAPI_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###
