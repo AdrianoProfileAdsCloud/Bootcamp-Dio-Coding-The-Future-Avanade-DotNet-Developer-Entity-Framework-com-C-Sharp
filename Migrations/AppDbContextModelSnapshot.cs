@@ -30,6 +30,12 @@ namespace ProjetoAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("FimProjeto")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("InicioProjeto")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -37,12 +43,6 @@ namespace ProjetoAPI.Migrations
                     b.Property<string>("Projeto")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("fimProjeto")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("inicioProjeto")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 

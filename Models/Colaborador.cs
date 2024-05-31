@@ -13,6 +13,6 @@ namespace ProjetoAPI.Models
         public DateTime InicioProjeto{get;set;}
         public DateTime FimProjeto{get;set;}
 
-        public ICollection<Tarefa> Tarefas{get;set;}= new List<Tarefa>();
+        public ICollection<Tarefa> Tarefas{get;set;}
     }
 }

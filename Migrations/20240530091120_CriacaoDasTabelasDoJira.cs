@@ -19,8 +19,8 @@ namespace ProjetoAPI.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     Nome = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Projeto = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    inicioProjeto = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    fimProjeto = table.Column<DateTime>(type: "datetime2", nullable: false)
+                    InicioProjeto = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    FimProjeto = table.Column<DateTime>(type: "datetime2", nullable: false)
                 },
                 constraints: table =>
                 {

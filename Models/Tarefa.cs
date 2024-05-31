@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
+
 namespace ProjetoAPI.Models
 {
     public class Tarefa
@@ -13,6 +14,7 @@ namespace ProjetoAPI.Models
         public DateTime Data { get; set; }
         public EnumStatusTarefa Status { get; set; }
         public int ColaboradorId { get; set; }
+
         public Colaborador Colaborador { get; set; }
     }
 }

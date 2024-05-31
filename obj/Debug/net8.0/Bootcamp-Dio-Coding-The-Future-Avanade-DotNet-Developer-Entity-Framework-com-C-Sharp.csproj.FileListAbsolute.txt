@@ -272,3 +272,4 @@ D:\Projetos e BootCamps\Bootcamp Coding The Future Avanade - .NET Developer\Prj-
 D:\Projetos e BootCamps\Bootcamp Coding The Future Avanade - .NET Developer\Prj-Entity Framework com C#\PRJ- Entity Framework C#\obj\Debug\net8.0\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.pdb
 D:\Projetos e BootCamps\Bootcamp Coding The Future Avanade - .NET Developer\Prj-Entity Framework com C#\PRJ- Entity Framework C#\obj\Debug\net8.0\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.genruntimeconfig.cache
 D:\Projetos e BootCamps\Bootcamp Coding The Future Avanade - .NET Developer\Prj-Entity Framework com C#\PRJ- Entity Framework C#\obj\Debug\net8.0\ref\Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp.dll
+D:\Projetos e BootCamps\Bootcamp Coding The Future Avanade - .NET Developer\Prj-Entity Framework com C#\PRJ- Entity Framework C#\bin\Debug\net8.0\Newtonsoft.Json.dll

@@ -12,7 +12,7 @@ using ProjetoAPI.Context;
 namespace ProjetoAPI.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240529071924_CriacaoDasTabelasDoJira")]
+    [Migration("20240530091120_CriacaoDasTabelasDoJira")]
     partial class CriacaoDasTabelasDoJira
     {
         /// <inheritdoc />
@@ -33,6 +33,12 @@ namespace ProjetoAPI.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<DateTime>("FimProjeto")
+                        .HasColumnType("datetime2");
+
+                    b.Property<DateTime>("InicioProjeto")
+                        .HasColumnType("datetime2");
+
                     b.Property<string>("Nome")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -40,12 +46,6 @@ namespace ProjetoAPI.Migrations
                     b.Property<string>("Projeto")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
-
-                    b.Property<DateTime>("fimProjeto")
-                        .HasColumnType("datetime2");
-
-                    b.Property<DateTime>("inicioProjeto")
-                        .HasColumnType("datetime2");
 
                     b.HasKey("Id");
 
