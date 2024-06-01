@@ -140,17 +140,45 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
   "descricao": "string",
   "data": "2024-05-31T07:46:02.258Z",
   "status": 2,
-  "colaboradorId": 1,
+  "colaboradorId": int,
   "colaborador": {
-    "id": 0,
+    "id": int,
     "nome": "string",
     "projeto": "string",
-    "inicioProjeto": "2024-05-31T07:46:02.258Z",
-    "fimProjeto": "2024-05-31T07:46:02.258Z",
+    "inicioProjeto": "DateTime",
+    "fimProjeto": "DateTime",
     "tarefas": []
   }
 }
+```
+## Metodos
+**Swagger**
+![Métodos Swagger](https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp/blob/main/Imagens/Swagger%20Colaborador.png)
 
+**Endpoints**
+
+
+| Verbo  | Endpoint                | Parâmetro | Body          |
+|--------|-------------------------|-----------|---------------|
+| GET    | /Tarefa/{id}            | id        | N/A           |
+| PUT    | /Tarefa/{id}            | id        | Schema Tarefa |
+| DELETE | /Tarefa/{id}            | id        | N/A           |
+| GET    | /Tarefa/ObterTodos      | N/A       | N/A           |
+| GET    | /Tarefa/ObterPorTitulo  | titulo    | N/A           |
+| GET    | /Tarefa/ObterPorData    | data      | N/A           |
+| GET    | /Tarefa/ObterPorStatus  | status    | N/A           |
+| POST   | /Tarefa                 | N/A       | Schema Tarefa |
+
+Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que exigirem
+
+```json
+{  
+  "nome": "string",
+  "projeto": "string",
+  "inicioProjeto": "DateTime",
+  "fimProjeto": "DateTime",
+  "tarefas": []
+}
 ```
 
 
