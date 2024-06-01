@@ -140,9 +140,9 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
   "descricao": "string",
   "data": "2024-05-31T07:46:02.258Z",
   "status": 2,
-  "colaboradorId": int,
+  "colaboradorId":int,
   "colaborador": {
-    "id": int,
+    "id":int,
     "nome": "string",
     "projeto": "string",
     "inicioProjeto": "DateTime",
@@ -151,6 +151,7 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
   }
 }
 ```
+
 ## Metodos
 **Swagger**
 ![Métodos Swagger](https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp/blob/main/Imagens/Swagger%20Colaborador.png)
@@ -167,7 +168,7 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
 | GET    | /Tarefa/ObterPorTitulo  | titulo    | N/A           |
 | GET    | /Tarefa/ObterPorData    | data      | N/A           |
 | GET    | /Tarefa/ObterPorStatus  | status    | N/A           |
-| POST   | /Tarefa                 | N/A       | Schema Tarefa |
+| POST   | /Colaborador            | N/A       | Schema Tarefa |
 
 Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que exigirem
 
