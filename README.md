@@ -84,7 +84,7 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 ````
 # Clone este repositório
  git clone https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp
- # Acesse a pasta do projeto no terminal
+# Acesse a pasta do projeto no terminal
  cd pasta
 
 # Abra a pasta do projeto no VS Code. Em seguida instale os seguites pacotes, pois alguns são a nível de projeto.
@@ -104,6 +104,14 @@ Obs: Antes de executar o último comando "dotnet-ef database update" certifique-
  # O servidor iniciará na porta:5166
  # Acesse http://localhost:5166/swagger/index.html
  ````
+
+### 🛠 Tecnologias<a id="tecnologias"></a>
+ As seguintes ferramentas foram usadas na construção do projeto:
+ 
+  - [Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS) 
+  - [Node.js](https://nodejs.org/pt-br/)
+  - [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
+  - [React](https://reactjs.org/) 
 
 ## Métodos esperados
 É esperado que você crie o seus métodos conforme a seguir:
