@@ -53,10 +53,10 @@ A Propriedade **appsettings.Development** ,  em formato Json consta propriedades
 ###  Pré-requisitos<a id="pre-requisitos"></a>
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
- [Git](https://git-scm.com/),
- [Docker](https://www.docker.com/products/docker-desktop/)
- [Vs Code](https://code.visualstudio.com/)
- [Dot Net 8](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)
+ [Git](https://git-scm.com/),<br>
+ [Docker](https://www.docker.com/products/docker-desktop/)<br>
+ [Vs Code](https://code.visualstudio.com/)<br>
+ [Dot Net 8](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)<br>
  
  Este é instalado uma unica vez na máquina e de uso Global:
 dotnet tool install --global dotnet-ef  
