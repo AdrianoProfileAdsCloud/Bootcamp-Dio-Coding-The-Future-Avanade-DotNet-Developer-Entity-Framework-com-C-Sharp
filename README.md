@@ -6,10 +6,10 @@ Este Desafio de Projeto tem por finalidade demonstrar a aplicabilidade dos conhe
 > O projeto conta com apenas duas Entidades, o Colaborador e as Tarefas, onde, se baseando no contexto do Jira, crio uma funcionalidade que mostra o andamento das atividades do colaborador no decorrer do projeto.
 > Muitos dos recursos aqui utilizados não foram expostos nas aulas. Mas, com base no que foi ministrado, foi possível ir mais além em busca de mais conhecimentos.
 
-## Contexto
-Você precisa construir um sistema gerenciador de tarefas, onde você poderá cadastrar uma lista de tarefas que permitirá organizar melhor a sua rotina.
+## 🎯Contexto
+Contrução de um Sistema Gerenciador de Projetos, onde você podemos cadastrar um colaborador de um projeto e adicionar ao mesmo uma lista de tarefas que deseverá realizar ao longo do projeto.Onde será possível acompanhar o Status das tarefas associadas ao colaborador.
 
-Essa lista de tarefas precisa ter um CRUD, ou seja, deverá permitir a você obter os registros, criar, salvar e deletar esses registros.
+Tanto os Colaboradores quanto a lista de Tarefas conta com um CRUD, ou seja, é possivél ter as aperações comuns em um Sistema como: Pesquisar,Criar,Deletar e Atualizar os registros.
 
 A sua aplicação deverá ser do tipo Web API ou MVC, fique a vontade para implementar a solução que achar mais adequado.
 
