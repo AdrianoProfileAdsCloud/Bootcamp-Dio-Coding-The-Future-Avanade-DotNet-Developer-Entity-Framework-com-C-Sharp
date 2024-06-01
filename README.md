@@ -1,8 +1,9 @@
-# DIO - Trilha .NET - API e Entity Framework
-www.dio.me
+# Bootcamp Dio - Coding The Future Avanade .NET Developer - Entity Framework com C#
 
-## Desafio de projeto
-Para este desafio, você precisará usar seus conhecimentos adquiridos no módulo de API e Entity Framework, da trilha .NET da DIO.
+> ℹ️ **Desafio de projeto**
+Este Desafio de Projeto tem por finalidade demostrara aplicabiliade dos conhecimentos do módulo de API e Entity Framework.Para tal foi desenvolvido um Sistema  Gerenciador de Projetos, me baseei na ideia do "Jira". claro que só para poder desenvolver uma funcionalidade minimalista do sistema, mais que trouxe para meu desenvolvimento um sentido de uso.
+> O projeto conta com apenas duas Entidades a Colaborador e Tarefas, onde se baseando no contexto do Jira crio uma funcionalidade que mostra o andamento das atividades do colaborador no decorrer do projeto.
+> Muitos dos recursos aqui utilizados não foram expostos nas aulas.Mas com base no que foi ministrado foi possíel ir mais além em busca de mais conhecimentos.
 
 ## Contexto
 Você precisa construir um sistema gerenciador de tarefas, onde você poderá cadastrar uma lista de tarefas que permitirá organizar melhor a sua rotina.
