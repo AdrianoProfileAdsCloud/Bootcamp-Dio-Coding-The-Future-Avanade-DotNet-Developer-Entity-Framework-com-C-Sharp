@@ -41,7 +41,9 @@ Propriedades: Cada propriedade da classe Colaboradores corresponde a uma coluna 
 **InicioProjeto**: Data de início do projeto.<br>
 **FimProjeto**: Data de término do projeto (pode ser nula).<br>
 **Tarefas**: Lista de tarefas atribuídas ao colaborador (propriedade de navegação).<br>
-Não se esqueça de gerar a sua migration para atualização no banco de dados.
+
+> [!IMPORTANT]
+> Configurações e Classes importantes que merecem atenção.
 
 ## Métodos esperados
 É esperado que você crie o seus métodos conforme a seguir:
