@@ -115,7 +115,7 @@ Obs: Antes de executar o último comando "dotnet-ef database update" certifique-
 
 ## Metodos
 **Swagger**
-![Métodos Swagger]([swagger.png](https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp/blob/main/Imagens/Swagger%20Tarefa.png)
+![Métodos Swagger](https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp/blob/main/Imagens/Swagger%20Tarefa.png)
 
 **Endpoints**
 
