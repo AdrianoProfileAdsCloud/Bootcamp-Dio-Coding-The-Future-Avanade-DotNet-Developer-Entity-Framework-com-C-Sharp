@@ -166,7 +166,6 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
 | DELETE | /Colaborador/{id}             | id        | N/A                |
 | GET    | /Colaborador/ObterTodos       | N/A       | N/A                |
 | GET    | /Colaborador/ObterPorNome     | nome      | N/A                |
-| GET    | /Colaborador/ObterPorData     | data      | N/A                |
 | GET    | /Colaborador/ObterPorStatus   | status    | N/A                |
 | POST   | /Colaborador                  | N/A       | Schema Colaborador |
 
