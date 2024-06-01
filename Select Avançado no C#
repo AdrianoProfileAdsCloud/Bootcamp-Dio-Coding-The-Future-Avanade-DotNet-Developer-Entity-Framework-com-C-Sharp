@@ -1,0 +1,104 @@
+Método Personalizado no Controlador
+Vamos criar um novo método no seu ColaboradorController que trará os detalhes do colaborador juntamente com suas tarefas.
+
+Adicionando o Método no Controlador
+csharp
+Copiar código
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using ProjetoAPI.Models;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace ProjetoAPI.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class ColaboradorController : ControllerBase
+    {
+        private readonly AppDbContext _context;
+
+        public ColaboradorController(AppDbContext context)
+        {
+            _context = context;
+        }
+
+        // Endpoint para obter colaborador e suas tarefas
+        [HttpGet("ObterColaboradorComTarefas/{id}")]
+        public async Task<IActionResult> ObterColaboradorComTarefas(int id)
+        {
+            var colaborador = await _context.Colaboradores
+                .Where(c => c.Id == id)
+                .Include(c => c.Tarefas)
+                .Select(c => new
+                {
+                    c.Id,
+                    c.Nome,
+                    c.Projeto,
+                    c.InicioProjeto,
+                    c.FimProjeto,
+                    Tarefas = c.Tarefas.Select(t => new
+                    {
+                        t.Id,
+                        t.Titulo,
+                        t.Descricao,
+                        t.Data,
+                        t.Status
+                    }).ToList()
+                })
+                .FirstOrDefaultAsync();
+
+            if (colaborador == null)
+            {
+                return NotFound();
+            }
+
+            return Ok(colaborador);
+        }
+
+        // Outros métodos do controlador
+    }
+}
+Explicação
+Inclusão do Namespace:
+Certifique-se de que você está importando o namespace Microsoft.EntityFrameworkCore para poder usar o método Include.
+
+Método ObterColaboradorComTarefas:
+
+Consulta LINQ: Usamos Where para filtrar o colaborador pelo ID e Include para incluir suas tarefas.
+Projeção Anônima: Usamos Select para projetar os resultados em um objeto anônimo, incluindo apenas as propriedades necessárias do colaborador e suas tarefas.
+ToList(): Converte a lista de tarefas para uma lista em memória.
+FirstOrDefaultAsync(): Obtém o primeiro colaborador encontrado ou null se nenhum colaborador for encontrado.
+Exemplo de Resposta
+Se você fizer uma requisição GET para api/Colaborador/ObterColaboradorComTarefas/1, a resposta JSON poderá ser algo assim:
+
+json
+Copiar código
+{
+  "id": 1,
+  "nome": "João Silva",
+  "projeto": "Projeto A",
+  "inicioProjeto": "2024-01-01T00:00:00",
+  "fimProjeto": "2024-12-31T00:00:00",
+  "tarefas": [
+    {
+      "id": 1,
+      "titulo": "Nova Tarefa",
+      "descricao": "Descrição da Nova Tarefa",
+      "data": "2024-07-01T00:00:00",
+      "status": 0
+    },
+    {
+      "id": 2,
+      "titulo": "Outra Tarefa",
+      "descricao": "Descrição da Outra Tarefa",
+      "data": "2024-08-01T00:00:00",
+      "status": 1
+    }
+  ]
+}
+Conclusão
+Este método permite que você obtenha um colaborador e suas tarefas de forma eficiente,
+ projetando os dados em um formato adequado para a sua resposta JSON. A utilização de
+  Include e Select garante que você traga apenas os dados necessários, otimizando o
+   desempenho da sua aplicação.

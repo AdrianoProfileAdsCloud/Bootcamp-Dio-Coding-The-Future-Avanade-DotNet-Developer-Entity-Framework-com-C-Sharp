@@ -21,7 +21,7 @@ namespace ProjetoAPI.Controllers
         }
 
         [HttpPost]
-        public  IActionResult CadastrarColaborador(Colaborador colaborador)
+        public  IActionResult Colaborador(Colaborador colaborador)
         {
             if (colaborador.Projeto == "")
             {
@@ -37,12 +37,12 @@ namespace ProjetoAPI.Controllers
             }
             _context.Add(colaborador);
             _context.SaveChanges();
-            return CreatedAtAction(nameof(ObterColaboradorPorId), new { id = colaborador.Id }, colaborador);
+            return CreatedAtAction(nameof(ObterPorId), new { id = colaborador.Id }, colaborador);
 
         }
 
-        [HttpGet("ObterColaboradorPorId/{id}")]
-        public IActionResult ObterColaboradorPorId(int id)
+        [HttpGet("{id}")]
+        public IActionResult ObterPorId(int id)
         {
             var colaborador = _context.Colaborador.Find(id);
             if (colaborador != null)
@@ -55,7 +55,7 @@ namespace ProjetoAPI.Controllers
             }
         }
 
-        [HttpGet("ObterTarefasDoColaboradorPorIdColaborador/{id}")]
+        [HttpGet("ObterTarefas/{id}")]
         public async Task<IActionResult> ObterTarefasDoColaboradorPorIdColaborador(int id)
         {
             var colaborador = await _context.Colaborador
@@ -88,7 +88,7 @@ namespace ProjetoAPI.Controllers
         }
     
 
-    [HttpGet("ObterColaboradorPorNome/{nome}")]
+    [HttpGet("ObterPorNome")]
     public async Task<IActionResult> ObterColaboradorPorNome(string nome)
     {
         //Uma das forma de se fazer
@@ -126,7 +126,7 @@ namespace ProjetoAPI.Controllers
             return Ok(colaborador);
         }
     
-     [HttpPut("AtualizarColaborador/{id}")]
+     [HttpPut("{id}")]
     public IActionResult AtualizarColaborador(int id, Colaborador colaborador)
     {
         var colaboradorBD = _context.Colaborador.Find(id);
@@ -148,7 +148,7 @@ namespace ProjetoAPI.Controllers
         }
     }
 
-    [HttpDelete("DeletarColaborador/{id}")]
+    [HttpDelete("{id}")]
     public IActionResult DeletarColaborador(int id)
     {
         var colaboradorBD = _context.Colaborador.Find(id);
@@ -164,7 +164,7 @@ namespace ProjetoAPI.Controllers
         }
     }
 
-    [HttpGet("ObterTodosColaboradores")]
+    [HttpGet("ObterTodos")]
     public async Task<IActionResult> ObterTodosColaboradores()
     {
         var colaboradores = await _context.BuscarTodosColaboradores();
