@@ -113,10 +113,9 @@ Obs: Antes de executar o último comando "dotnet-ef database update" certifique-
   - [Sql Server](https://www.microsoft.com/en-gb/sql-server/sql-server-downloads)
   - [Docker](https://www.docker.com/) 
 
-## Endpoints
+## Metodos
 **Swagger**
-![Métodos Swagger](swagger.png)
-
+![Métodos Swagger]([swagger.png](https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp/blob/main/Imagens/Swagger%20Tarefa.png)
 
 **Endpoints**
 
@@ -139,9 +138,19 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
   "id": 0,
   "titulo": "string",
   "descricao": "string",
-  "data": "2022-06-08T01:31:07.056Z",
-  "status": "Pendente"
+  "data": "2024-05-31T07:46:02.258Z",
+  "status": 2,
+  "colaboradorId": 1,
+  "colaborador": {
+    "id": 0,
+    "nome": "string",
+    "projeto": "string",
+    "inicioProjeto": "2024-05-31T07:46:02.258Z",
+    "fimProjeto": "2024-05-31T07:46:02.258Z",
+    "tarefas": []
+  }
 }
+
 ```
 
 
