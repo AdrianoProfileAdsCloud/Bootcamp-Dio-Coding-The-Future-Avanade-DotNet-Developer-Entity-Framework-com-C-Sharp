@@ -54,7 +54,7 @@ A Propriedade **appsettings.Development** ,  em formato Json consta propriedades
 
 Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
  [Git](https://git-scm.com/),
- [Docker]([https://nodejs.org/pt-br/](https://www.docker.com/products/docker-desktop/)
+ [Docker](https://www.docker.com/products/docker-desktop/)
  [Vs Code](https://code.visualstudio.com/)
  [Dot Net 8](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)
  
