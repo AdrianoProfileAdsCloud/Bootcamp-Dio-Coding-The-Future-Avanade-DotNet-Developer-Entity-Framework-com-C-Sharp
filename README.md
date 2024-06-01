@@ -81,8 +81,8 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
   ### 🎲Rodando a Aplicação<a id="rodando"></a>
    
-````terminal 
- # Clone este repositório
+````
+# Clone este repositório
  git clone https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp
  # Acesse a pasta do projeto no terminal
  cd pasta
