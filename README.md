@@ -21,26 +21,26 @@ Diagrama do modelo conceitual :
 
 - [X] **Tarefa**
 
-Tabela responsável por armazenar informações das Tarefas.
-Propriedades: Cada propriedade da classe Tarefa corresponde a uma coluna na tabela do banco de dados.
-**Id**: Identificador único da tarefa.
-**Titulo**: Título da tarefa.
-**Descricao**: Descrição detalhada da tarefa.
-**Data**: Data da tarefa.
-**Status**: Status da tarefa, utilizando um enum EnumStatusTarefa.
-**ColaboradorId**: Chave estrangeira que referencia um colaborador.
-**Colaborador**: Propriedade de navegação para acessar o colaborador relacionado.
+Tabela responsável por armazenar informações das Tarefas.<br>
+Propriedades: Cada propriedade da classe Tarefa corresponde a uma coluna na tabela do banco de dados.<br>
+**Id**: Identificador único da tarefa.<br>
+**Titulo**: Título da tarefa.<br>
+**Descricao**: Descrição detalhada da tarefa.<br>
+**Data**: Data da tarefa.<br>
+**Status**: Status da tarefa, utilizando um enum EnumStatusTarefa.<br>
+**ColaboradorId**: Chave estrangeira que referencia um colaborador.<br>
+**Colaborador**: Propriedade de navegação para acessar o colaborador relacionado.<br>
 
 - [X] **Colaboradores**
 
-Tabela responsável por armazenar informações dos Colaboradores.
-Propriedades: Cada propriedade da classe Colaboradores corresponde a uma coluna na tabela do banco de dados.
-**ColaboradorId**: Identificador único do colaborador.
-**Nome**: Nome do colaborador.
-**Projeto**: Nome do projeto no qual o colaborador está trabalhando.
-**InicioProjeto**: Data de início do projeto.
-**FimProjeto**: Data de término do projeto (pode ser nula).
-**Tarefas**: Lista de tarefas atribuídas ao colaborador (propriedade de navegação).
+Tabela responsável por armazenar informações dos Colaboradores.<br>
+Propriedades: Cada propriedade da classe Colaboradores corresponde a uma coluna na tabela do banco de dados.<br>
+**ColaboradorId**: Identificador único do colaborador.<br>
+**Nome**: Nome do colaborador.<br>
+**Projeto**: Nome do projeto no qual o colaborador está trabalhando.<br>
+**InicioProjeto**: Data de início do projeto.<br>
+**FimProjeto**: Data de término do projeto (pode ser nula).<br>
+**Tarefas**: Lista de tarefas atribuídas ao colaborador (propriedade de navegação).<br>
 Não se esqueça de gerar a sua migration para atualização no banco de dados.
 
 ## Métodos esperados
