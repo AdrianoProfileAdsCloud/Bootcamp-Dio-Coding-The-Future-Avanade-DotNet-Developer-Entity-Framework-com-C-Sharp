@@ -52,8 +52,8 @@ A Propriedade **appsettings.Development** ,  em formato Json consta propriedades
 
 ###  Pré-requisitos<a id="pre-requisitos"></a>
 
-Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
- [Git](https://git-scm.com/),<br>
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:<br>
+ [Git](https://git-scm.com/)<br>
  [Docker](https://www.docker.com/products/docker-desktop/)<br>
  [Vs Code](https://code.visualstudio.com/)<br>
  [Dot Net 8](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)<br>
