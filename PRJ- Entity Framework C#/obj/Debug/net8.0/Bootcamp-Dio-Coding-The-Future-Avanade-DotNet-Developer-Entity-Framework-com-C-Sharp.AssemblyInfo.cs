@@ -14,7 +14,7 @@ using System.Reflection;
     "arp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2d2695b2bf705da726ec013e40459d10eb994eed")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+34adc69845a1072bc19a8eec029abbda415eb051")]
 [assembly: System.Reflection.AssemblyProductAttribute("Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sh" +
     "arp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sh" +
