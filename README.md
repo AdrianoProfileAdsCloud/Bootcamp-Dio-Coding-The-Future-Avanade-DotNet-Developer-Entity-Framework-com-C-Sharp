@@ -1,6 +1,7 @@
 # Bootcamp Dio - Coding The Future Avanade .NET Developer - Entity Framework com C#
 
 > ℹ️ **Desafio de projeto**
+> <br>
 Este Desafio de Projeto tem por finalidade demostrara aplicabiliade dos conhecimentos do módulo de API e Entity Framework.Para tal foi desenvolvido um Sistema  Gerenciador de Projetos, me baseei na ideia do "Jira". claro que só para poder desenvolver uma funcionalidade minimalista do sistema, mais que trouxe para meu desenvolvimento um sentido de uso.
 > O projeto conta com apenas duas Entidades a Colaborador e Tarefas, onde se baseando no contexto do Jira crio uma funcionalidade que mostra o andamento das atividades do colaborador no decorrer do projeto.
 > Muitos dos recursos aqui utilizados não foram expostos nas aulas.Mas com base no que foi ministrado foi possíel ir mais além em busca de mais conhecimentos.
