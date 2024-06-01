@@ -159,18 +159,18 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
 **Endpoints**
 
 
-| Verbo  | Endpoint                | Parâmetro | Body          |
-|--------|-------------------------|-----------|---------------|
-| GET    | /Tarefa/{id}            | id        | N/A           |
-| PUT    | /Tarefa/{id}            | id        | Schema Tarefa |
-| DELETE | /Tarefa/{id}            | id        | N/A           |
-| GET    | /Tarefa/ObterTodos      | N/A       | N/A           |
-| GET    | /Tarefa/ObterPorTitulo  | titulo    | N/A           |
-| GET    | /Tarefa/ObterPorData    | data      | N/A           |
-| GET    | /Tarefa/ObterPorStatus  | status    | N/A           |
-| POST   | /Colaborador            | N/A       | Schema Tarefa |
+| Verbo  | Endpoint                      | Parâmetro | Body               |
+|--------|-------------------------------|-----------|--------------------|
+| GET    | /Colaborador/{id}             | id        | N/A                |
+| PUT    | /Colaborador/{id}             | id        | Schema Colaborador |
+| DELETE | /Colaborador/{id}             | id        | N/A                |
+| GET    | /Colaborador/ObterTodos       | N/A       | N/A                |
+| GET    | /Colaborador/ObterPorNome     | nome      | N/A                |
+| GET    | /Colaborador/ObterPorData     | data      | N/A                |
+| GET    | /Colaborador/ObterPorStatus   | status    | N/A                |
+| POST   | /Colaborador                  | N/A       | Schema Colaborador |
 
-Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que exigirem
+Esse é o schema (model) de Colaborador, utilizado para passar para os métodos que exigirem
 
 ```json
 {  
