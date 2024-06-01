@@ -21,7 +21,7 @@ namespace ProjetoAPI.Controllers
         }
 
         [HttpPost]
-        public  IActionResult Colaborador(Colaborador colaborador)
+        public IActionResult Colaborador(Colaborador colaborador)
         {
             if (colaborador.Projeto == "")
             {
@@ -86,16 +86,16 @@ namespace ProjetoAPI.Controllers
 
             return Ok(colaborador);
         }
-    
 
-    [HttpGet("ObterPorNome")]
-    public async Task<IActionResult> ObterColaboradorPorNome(string nome)
-    {
-        //Uma das forma de se fazer
-        //var colaborador = _context.Colaborador.Where(x => x.Nome.Contains(nome));
-        //Por questões de ser uma api a forma abaixo é muito mais perfomatica por assíncrono
-        //Outras rotas também poderiam estar de forma assíncrono, vou deixar apenas algumas desta forma 
-        //para demostrar o que aprendi em minha busca por mais informações a respeito!
+
+        [HttpGet("ObterPorNome")]
+        public async Task<IActionResult> ObterColaboradorPorNome(string nome)
+        {
+            //Uma das forma de se fazer
+            //var colaborador = _context.Colaborador.Where(x => x.Nome.Contains(nome));
+            //Por questões de ser uma api a forma abaixo é muito mais perfomatica por assíncrono
+            //Outras rotas também poderiam estar de forma assíncrono, vou deixar apenas algumas desta forma 
+            //para demostrar o que aprendi em minha busca por mais informações a respeito!
 
             var colaborador = await _context.Colaborador
             .Where(c => c.Nome == nome)
@@ -125,50 +125,83 @@ namespace ProjetoAPI.Controllers
 
             return Ok(colaborador);
         }
-    
-     [HttpPut("{id}")]
-    public IActionResult AtualizarColaborador(int id, Colaborador colaborador)
-    {
-        var colaboradorBD = _context.Colaborador.Find(id);
-        if (colaboradorBD != null)
-        {
-            colaboradorBD.Nome = colaborador.Nome;
-            colaboradorBD.Projeto = colaborador.Projeto;
-            colaboradorBD.InicioProjeto = colaborador.InicioProjeto;
-            colaborador.FimProjeto = colaborador.FimProjeto;
 
-            _context.Colaborador.Update(colaboradorBD);
-            _context.SaveChanges();
-
-            return Ok(colaboradorBD);
-        }
-        else
+        [HttpPut("{id}")]
+        public IActionResult AtualizarColaborador(int id, Colaborador colaborador)
         {
-            return NotFound();
-        }
-    }
+            var colaboradorBD = _context.Colaborador.Find(id);
+            if (colaboradorBD != null)
+            {
+                colaboradorBD.Nome = colaborador.Nome;
+                colaboradorBD.Projeto = colaborador.Projeto;
+                colaboradorBD.InicioProjeto = colaborador.InicioProjeto;
+                colaborador.FimProjeto = colaborador.FimProjeto;
 
-    [HttpDelete("{id}")]
-    public IActionResult DeletarColaborador(int id)
-    {
-        var colaboradorBD = _context.Colaborador.Find(id);
-        if (colaboradorBD != null)
-        {
-            _context.Colaborador.Remove(colaboradorBD);
-            _context.SaveChanges();
-            return NoContent();
-        }
-        else
-        {
-            return NotFound();
-        }
-    }
+                _context.Colaborador.Update(colaboradorBD);
+                _context.SaveChanges();
 
-    [HttpGet("ObterTodos")]
-    public async Task<IActionResult> ObterTodosColaboradores()
-    {
-        var colaboradores = await _context.BuscarTodosColaboradores();
-        return Ok(colaboradores);
+                return Ok(colaboradorBD);
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpDelete("{id}")]
+        public IActionResult DeletarColaborador(int id)
+        {
+            var colaboradorBD = _context.Colaborador.Find(id);
+            if (colaboradorBD != null)
+            {
+                _context.Colaborador.Remove(colaboradorBD);
+                _context.SaveChanges();
+                return NoContent();
+            }
+            else
+            {
+                return NotFound();
+            }
+        }
+
+        [HttpGet("ObterTodos")]
+        public async Task<IActionResult> ObterTodosColaboradores()
+        {
+            var colaboradores = await _context.BuscarTodosColaboradores();
+            return Ok(colaboradores);
+        }
+        [HttpGet("ObterPorStatus")]
+        public async Task<IActionResult> ObterPorStatus(EnumStatusTarefa status)
+        {
+            var tarefas = await _context.Tarefas
+                .Where(t => t.Status == status)
+                .Include(t => t.Colaborador)
+                .Select(t => new
+                {
+                    t.Id,
+                    t.Titulo,
+                    t.Descricao,
+                    t.Data,
+                    t.Status,
+                    Colaborador = new
+                    {
+                        t.Colaborador.Id,
+                        t.Colaborador.Nome,
+                        t.Colaborador.Projeto,
+                        t.Colaborador.InicioProjeto,
+                        t.Colaborador.FimProjeto
+                    }
+                })
+                .ToListAsync();
+
+            if (tarefas == null || tarefas.Count == 0)
+            {
+                return NotFound();
+            }
+
+            return Ok(tarefas);
+        }
     }
 }
-}
+
+
