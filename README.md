@@ -45,8 +45,14 @@ Propriedades: Cada propriedade da classe Colaboradores corresponde a uma coluna 
 > [!IMPORTANT]
 Configurações e Classes importantes que merecem atenção.
 
+O **DbContext**
+onde é feito todo gerenciamento das entidades e o mapeamento para o banco de dados.Nesta classe onde se encontra o Relacionamento da Entidade Colaborador com Tarefas, dizemos nela como o ORM deverá fazer sua implementação no Banco de Dados.
+
+
+
 ## Métodos esperados
 É esperado que você crie o seus métodos conforme a seguir:
+
 
 
 **Swagger**
