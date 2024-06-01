@@ -43,7 +43,7 @@ Propriedades: Cada propriedade da classe Colaboradores corresponde a uma coluna 
 **Tarefas**: Lista de tarefas atribuídas ao colaborador (propriedade de navegação).<br>
 
 > [!IMPORTANT]
-> Configurações e Classes importantes que merecem atenção.
+Configurações e Classes importantes que merecem atenção.
 
 ## Métodos esperados
 É esperado que você crie o seus métodos conforme a seguir:
