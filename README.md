@@ -57,12 +57,13 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
  [Docker](https://www.docker.com/products/docker-desktop/)<br>
  [Vs Code](https://code.visualstudio.com/)<br>
  [Dot Net 8](https://dotnet.microsoft.com/pt-br/download/dotnet/8.0)<br>
+  Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
  
  Este é instalado uma unica vez na máquina e de uso Global:
 dotnet tool install --global dotnet-ef  
 
  
- Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
+
 
 
 ## Métodos esperados
