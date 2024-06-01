@@ -43,11 +43,21 @@ Propriedades: Cada propriedade da classe Colaboradores corresponde a uma coluna 
 **Tarefas**: Lista de tarefas atribuídas ao colaborador (propriedade de navegação).<br>
 
 > [!IMPORTANT]
-Configurações e Classes importantes que merecem atenção.
+A seguir algumas Configurações e Classes importantes que merecem atenção.
 
 O **DbContext**
 onde é feito todo gerenciamento das entidades e o mapeamento para o banco de dados.Nesta classe onde se encontra o Relacionamento da Entidade Colaborador com Tarefas, dizemos nela como o ORM deverá fazer sua implementação no Banco de Dados.
 
+A Propriedade **appsettings.Development** ,  em formato Json consta propriedades que realizam a conexão de fato com o Banco de Dados.Neste caso por se tratar de um projeto para fins academicos foi configurado em Development para em sisema em produção as configurações devem ser realizadas em **appsettings*
+
+###  Pré-requisitos<a id="pre-requisitos"></a>
+
+Antes de começar, você vai precisar ter instalado em sua máquina as seguintes ferramentas:
+ [Git](https://git-scm.com/),
+ [Node.js](https://nodejs.org/pt-br/)
+ [React](https://reactjs.org/)
+ 
+ Além disto é bom ter um editor para trabalhar com o código como [VSCode](https://code.visualstudio.com/)
 
 
 ## Métodos esperados
