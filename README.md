@@ -81,31 +81,29 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 
   ### 🎲Rodando a Aplicação<a id="rodando"></a>
    
-````bash 
+````terminal 
  # Clone este repositório
- git clone https://github.com/Seu-perfil/repositorio 
+ git clone https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp
  # Acesse a pasta do projeto no terminal
  cd pasta
+
+# Abra a pasta do projeto no VS Code. Em seguida instale os seguites pacotes, pois alguns são a nível de projeto.
+ >  dotnet add package Microsoft.EntityFrameworkCore.Design
+ > dotnet add package Microsoft.EntityFrameworkCore.SqlServer
+Este último e de nível Global:
+ > dotnet tool install --global dotnet-ef
+  
+ # Comandos para criar as Migrations. Ela gerencia as alterações no esquema do banco de dados ao longo do tempo, de maneira controlada e versionada.
+Comando para criar Migration.<br>
+ > dotnet-ef migrations add CriacaoDasTabelasDoJira<br>
+Apos xecutar este comando usamos o Update para tranasformar esta migartion em uma entidade no Banco de Dodos:<br>
+ > dotnet-ef database update
+
+Obs: Antes de executar o último comando "dotnet-ef database update" certifique-se de ter iniciado o container no Docker como mencionado anteriormente, pois este comando criará no SQL o Banco de Dados com as tabelas de acordo com a estrutura das Classes.
  
- # Instale as dependências
- $ yarn install ou
- $ npm i 
- 
- # Execute a aplicação em modo de desenvolvimento
- $ npm start 
- $ yarn start
- 
- # O servidor iniciará na porta:3000
- # Acesse http://localhost:3000
+ # O servidor iniciará na porta:5166
+ # Acesse http://localhost:5166/swagger/index.html
  ````
-<p> Quando você tiver realizado todos os passos do projeto verá a  <a href="#imagem" >imagem do projeto</a> </p>
- 
- Este é instalado uma unica vez na máquina e de uso Global:
-dotnet tool install --global dotnet-ef  
-
- 
-
-
 
 ## Métodos esperados
 É esperado que você crie o seus métodos conforme a seguir:
