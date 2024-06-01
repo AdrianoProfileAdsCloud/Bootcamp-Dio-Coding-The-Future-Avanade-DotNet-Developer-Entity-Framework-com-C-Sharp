@@ -17,6 +17,30 @@ Diagrama do modelo conceitual :
 
 ![Diagrama do modelo Conceitual](https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp/blob/main/Imagens/Diagrama%20do%20modelo%20conceitual%20.png)
 
+* As tabelas sao descritas conforme a seguir:
+
+- [X] **Tarefa**
+
+Tabela responsável por armazenar informações das Tarefas.
+Propriedades: Cada propriedade da classe Tarefa corresponde a uma coluna na tabela do banco de dados.
+**Id**: Identificador único da tarefa.
+**Titulo**: Título da tarefa.
+**Descricao**: Descrição detalhada da tarefa.
+**Data**: Data da tarefa.
+**Status**: Status da tarefa, utilizando um enum EnumStatusTarefa.
+**ColaboradorId**: Chave estrangeira que referencia um colaborador.
+**Colaborador**: Propriedade de navegação para acessar o colaborador relacionado.
+
+- [X] **Colaboradores**
+
+Tabela responsável por armazenar informações dos Colaboradores.
+Propriedades: Cada propriedade da classe Colaboradores corresponde a uma coluna na tabela do banco de dados.
+**ColaboradorId**: Identificador único do colaborador.
+**Nome**: Nome do colaborador.
+**Projeto**: Nome do projeto no qual o colaborador está trabalhando.
+**InicioProjeto**: Data de início do projeto.
+**FimProjeto**: Data de término do projeto (pode ser nula).
+**Tarefas**: Lista de tarefas atribuídas ao colaborador (propriedade de navegação).
 Não se esqueça de gerar a sua migration para atualização no banco de dados.
 
 ## Métodos esperados
