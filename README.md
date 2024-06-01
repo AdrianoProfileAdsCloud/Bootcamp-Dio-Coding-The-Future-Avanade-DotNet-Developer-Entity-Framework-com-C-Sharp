@@ -78,6 +78,27 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 <img src="https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Banco-de-Dados/blob/main/Imagens/SQL%20Server%20Management.png" width="350">
 </div> 
  <p>Pronto ao se concetar com a instância no container docker poderá seguir com os passos seguintes.</p>
+
+  ### 🎲Rodando a Aplicação<a id="rodando"></a>
+   
+````bash 
+ # Clone este repositório
+ git clone https://github.com/Seu-perfil/repositorio 
+ # Acesse a pasta do projeto no terminal
+ cd pasta
+ 
+ # Instale as dependências
+ $ yarn install ou
+ $ npm i 
+ 
+ # Execute a aplicação em modo de desenvolvimento
+ $ npm start 
+ $ yarn start
+ 
+ # O servidor iniciará na porta:3000
+ # Acesse http://localhost:3000
+ ````
+<p> Quando você tiver realizado todos os passos do projeto verá a  <a href="#imagem" >imagem do projeto</a> </p>
  
  Este é instalado uma unica vez na máquina e de uso Global:
 dotnet tool install --global dotnet-ef  
