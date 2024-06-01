@@ -11,11 +11,11 @@ Contrução de um Sistema Gerenciador de Projetos, onde você podemos cadastrar 
 
 Tanto os Colaboradores quanto a lista de Tarefas conta com um CRUD, ou seja, é possivél ter as aperações comuns em um Sistema como: Pesquisar,Criar,Deletar e Atualizar os registros.
 
-A sua aplicação deverá ser do tipo Web API ou MVC, fique a vontade para implementar a solução que achar mais adequado.
+Aplicação com implementação do tipo Web API.
 
-A sua classe principal, a classe de tarefa, deve ser a seguinte:
+Diagrama do modelo conceitual :
 
-![Diagrama da classe Tarefa](diagrama.png)
+![Diagrama do modelo Conceitual](https://github.com/AdrianoProfileAdsCloud/Bootcamp-Dio-Coding-The-Future-Avanade-DotNet-Developer-Entity-Framework-com-C-Sharp/blob/main/Imagens/Diagrama%20do%20modelo%20conceitual%20.png)
 
 Não se esqueça de gerar a sua migration para atualização no banco de dados.
 
