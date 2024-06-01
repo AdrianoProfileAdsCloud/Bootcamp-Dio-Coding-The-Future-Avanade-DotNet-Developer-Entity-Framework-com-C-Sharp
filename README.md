@@ -106,21 +106,15 @@ Obs: Antes de executar o último comando "dotnet-ef database update" certifique-
  ````
 
 ### 🛠 Tecnologias<a id="tecnologias"></a>
- As seguintes ferramentas foram usadas na construção do projeto:
+ As seguintes ferramentas e tecnologias foram usadas na construção do projeto:
  
   - [C#](https://dotnet.microsoft.com/pt-br/languages/csharp) 
   - [Entity Framework](https://learn.microsoft.com/pt-br/ef/core/)
   - [Sql Server](https://www.microsoft.com/en-gb/sql-server/sql-server-downloads)
   - [Docker](https://www.docker.com/) 
 
-## Métodos esperados
-É esperado que você crie o seus métodos conforme a seguir:
-
-
-
+## Endpoints
 **Swagger**
-
-
 ![Métodos Swagger](swagger.png)
 
 
