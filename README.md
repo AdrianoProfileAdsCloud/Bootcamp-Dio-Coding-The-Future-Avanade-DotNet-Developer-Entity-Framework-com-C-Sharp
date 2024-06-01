@@ -109,7 +109,7 @@ Obs: Antes de executar o último comando "dotnet-ef database update" certifique-
  As seguintes ferramentas foram usadas na construção do projeto:
  
   - [C#](https://dotnet.microsoft.com/pt-br/languages/csharp) 
-  - [Entity Framework]([https://nodejs.org/pt-br/](https://learn.microsoft.com/pt-br/ef/core/)
+  - [Entity Framework](https://nodejs.org/pt-br/](https://learn.microsoft.com/pt-br/ef/core/)
   - [Sql Server](https://www.microsoft.com/en-gb/sql-server/sql-server-downloads)
   - [Docker](https://www.docker.com/) 
 
