@@ -108,10 +108,10 @@ Obs: Antes de executar o último comando "dotnet-ef database update" certifique-
 ### 🛠 Tecnologias<a id="tecnologias"></a>
  As seguintes ferramentas foram usadas na construção do projeto:
  
-  - [Css](https://developer.mozilla.org/pt-BR/docs/Web/CSS) 
-  - [Node.js](https://nodejs.org/pt-br/)
-  - [Html](https://developer.mozilla.org/pt-BR/docs/Web/HTML)
-  - [React](https://reactjs.org/) 
+  - [C#](https://dotnet.microsoft.com/pt-br/languages/csharp) 
+  - [Entity Framework]([https://nodejs.org/pt-br/](https://learn.microsoft.com/pt-br/ef/core/)
+  - [Sql Server](https://www.microsoft.com/en-gb/sql-server/sql-server-downloads)
+  - [Docker](https://www.docker.com/) 
 
 ## Métodos esperados
 É esperado que você crie o seus métodos conforme a seguir:
